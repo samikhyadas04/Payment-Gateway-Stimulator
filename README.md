@@ -108,7 +108,7 @@ Payment processed successfully.
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone <https://github.com/samikhyadas04/Payment-Gateway-Stimulator>
 cd Payment-Gateway-Simulator
 ```
 
