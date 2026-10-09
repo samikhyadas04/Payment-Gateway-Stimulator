@@ -22,7 +22,6 @@ The project is intended for educational purposes and focuses primarily on **obje
 * Common payment interface for different payment types
 * User and transaction management
 * Payment amount handling
-* Transaction ID generation
 * Payment status handling
 * Runtime polymorphism
 * Modular class-based architecture
@@ -40,7 +39,7 @@ The project is intended for educational purposes and focuses primarily on **obje
 
 The project follows a modular C++ structure that separates **interface definitions, implementations, and program execution**. This makes the codebase easier to understand, maintain, and extend.
 
-```text
+```
 Payment-Gateway-Simulator/
 │
 ├── include/                         # Header files
@@ -65,102 +64,9 @@ Payment-Gateway-Simulator/
 ```
 
 
+## Flowchart 
+<img width="1024" height="1536" alt="Terminal Payment App Flowchart" src="https://github.com/user-attachments/assets/b85387e4-a3c8-46bd-bd2a-b65b93525dd2" />
 
-
-```
-
----
-### Class Relationship
-
-The payment classes follow an inheritance-based design:
-
-```text
-                         ┌─────────────────┐
-                         │     Payment     │
-                         │  Abstract Base  │
-                         └────────┬────────┘
-                                  │
-                 ┌────────────────┼────────────────┐
-                 │                │                │
-                 ▼                ▼                ▼
-        ┌────────────────┐ ┌───────────────┐ ┌────────────────────┐
-        │  UPIPayment    │ │  CardPayment  │ │ NetBankingPayment  │
-        └────────────────┘ └───────────────┘ └────────────────────┘
-```
-
-The `Payment` class defines the common interface, while each derived class provides its own implementation of the payment process.
-
-### Program Flow
-
-```text
-                    ┌──────────────┐
-                    │    main()    │
-                    └──────┬───────┘
-                           │
-                           ▼
-                    ┌──────────────┐
-                    │ Create User  │
-                    └──────┬───────┘
-                           │
-                           ▼
-                    ┌──────────────┐
-                    │ Select Mode  │
-                    └──────┬───────┘
-                           │
-             ┌─────────────┼─────────────┐
-             ▼             ▼             ▼
-           UPI           Card       Net Banking
-             │             │             │
-             └─────────────┼─────────────┘
-                           ▼
-                  ┌─────────────────┐
-                  │ Process Payment  │
-                  └────────┬────────┘
-                           │
-                           ▼
-                  ┌─────────────────┐
-                  │ Transaction     │
-                  │ Result          │
-                  └─────────────────┘
-```
-
-This structure keeps **class declarations, implementations, and application logic separated**, following a clean and maintainable C++ project organization.
-
-
-
-## Transaction Flow
-
-```text
-Start
-  │
-  ▼
-Enter User Details
-  │
-  ▼
-Enter Payment Amount
-  │
-  ▼
-Select Payment Method
-  │
-  ├── UPI
-  ├── Card
-  └── Net Banking
-  │
-  ▼
-Create Payment Object
-  │
-  ▼
-Process Transaction
-  │
-  ▼
-Generate Transaction ID
-  │
-  ▼
-Display Transaction Status
-  │
-  ▼
-End
-```
 
 ---
 
