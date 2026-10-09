@@ -114,10 +114,9 @@ cd Payment-Gateway-Simulator
 
 ### 2. Compile
 
-If the project uses separate source and header directories:
 
 ```bash
-g++ main.cpp src/*.cpp -Iinclude -o payment_gateway
+g++ main.cpp src/Payment.cpp src/User.cpp src/UPIPayment.cpp src/CardPayment.cpp src/NetBankingPayment.cpp -o payment_gateway
 ```
 
 ### 3. Run
