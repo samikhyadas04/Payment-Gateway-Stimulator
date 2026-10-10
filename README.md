@@ -181,9 +181,8 @@ All transactions are simulated locally for academic purposes.
 ## Author
 
 **Samikhya Das**
-
-B.Tech — Computer Science & Engineering
-
+ID - B125109
+CSE B
 ---
 
 ## Disclaimer
