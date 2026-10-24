@@ -1,6 +1,6 @@
 # Payment-Gateway-Stimulator
 
-A modular **C++ payment gateway simulation system** developed as a 3rd-semester Object-Oriented Programming project. The application demonstrates how different payment methods can be modeled and processed using core OOP principles such as **abstraction, encapsulation, inheritance, and runtime polymorphism**.
+A modular **C++ payment gateway simulation system** developed as a 3rd-semester Object-Oriented Programming project. The application demonstrates how different payment methods can be modeled and processed using core OOP principles such as **abstraction, encapsulation, inheritance, and polymorphism**.
 
 > **Academic Project · C++ · Object-Oriented Programming**
 
